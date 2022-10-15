@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Example elements</title>
+
+	<style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        header, footer {
+             padding: 2rem;
+             background: #eee;
+        }
+        nav ul {
+            margin: 0; 
+            padding: 0;
+            list-style-type: none;
+        }
+        nav li { 
+            display: inline-block;
+            margin-right: 1rem;
+
+        }
+        main {
+            margin: 0 10% 2rem;
+        }
+        footer { margin-top: }
+
+
+        h2 {
+            margin-top: 2rem;
+        }
+        table {
+            margin-bottom: 3rem;
+        }
+        table, th, td {
+            border-style: solid;
+            border-width: 1px;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 0.5rem;
+        }
+        main li {margin-bottom: 0.5rem;}
+	</style>
+</head>
+
+<body>
+<header>
+    <nav><ul>
+        <li><a href="https://england.shelter.org.uk">Shelter</a></li>
+        <li><a href="https://design-system.service.gov.uk">GOV.UK Design System</a></li>
+        <li><a href="https://www.w3.org/WAI/WCAG21/quickref/">WCAG</a></li>
+    </ul></nav>
+</header>
+<main>
+	<h1>Example elements</h1>
+
+    <h2>Static Content</h2>
+    <p>Headings are used throughout the page.</p>
+
+    <h3>List:</h3>
+    <ul>
+        <li>Item</li> 
+        <li>Item</li> 
+        <li>Item</li> 
+    </ul>
+
+    <h3>Table</h3>
+    <table>
+        <tbody><tr>
+          <th>Date</th>
+          <th>Event</th>
+          <th>Venue</th>
+        </tr>
+        <tr>
+          <td>12 February</td>
+          <td>Waltz with Strauss</td>
+          <td>Main Hall</td>
+        </tr>
+        <tr>
+          <td>24 March</td>
+          <td>The Obelisks</td>
+          <td>West Wing</td>
+        </tr>
+        <tr>
+          <td>14 April</td>
+          <td>The What</td>
+          <td>Main Hall</td>
+        </tr>
+      </tbody></table>
+
+      <h3>Image</h3>
+      <p><img src="https://images.ctfassets.net/6sxvmndnpn0s/1qQWlJLKM5rpZHETE32eLX/fc3c1d9f75930f9f5e4d4d0754806ec7/logo--d-england.png" width="137" height="120" alt="Shelter logo"></p>
+
+    <h2>Interactive controls</h2>
+	<p>Links: <a href="#">Link 1</a>, <a href="#">Link 2</a>.</p>
+
+    <h3>Button:</h3>
+    <p><button onclick="javascript:alert('Button activated');">Button 1</button> 
+        <button onclick="javascript:alert('Button activated');">Button 2</button>  
+        <button onclick="javascript:alert('Button activated');" disabled>Button 3</button> </p>
+
+    <h3>Select with options:</h3>
+    <label for="pet-select">Choose a pet:</label>
+
+    <select name="pets" id="pet-select">
+        <option value="">-- Please choose a pet --</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+        <option value="parrot">Parrot</option>
+        <option value="spider">Spider</option>
+        <option value="goldfish">Goldfish</option>
+    </select>
+
+
+    <h3>Inputs</h3>
+    <p><label for="text1">Name:</label>
+    <input type="text" id="text1"></p>
+
+    <p><label for="text2">Password:</label>
+    <input type="password" id="text2" aria-describedby="password-help"></p>
+    <p id="password-help">Must be at least 8 characters.</p>
+
+    <p>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">Accept terms and conditions</label>
+    </p>
+
+    <h3>Grouped controls</h3>
+    <p>Where the label is not sufficient to know the question.</p>
+
+    <fieldset>
+        <legend>What is your size?</legend>
+        <p><input type="radio" name="size" id="radio-size1"><label for="radio-size1">Small</label></p>
+        <p><input type="radio" name="size" id="radio-size2"><label for="radio-size2">Medium</label></p>
+        <p><input type="radio" name="size" id="radio-size3"><label for="radio-size3">Large</label></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Choose your monster's features:</legend>
+    
+        <div>
+          <input type="checkbox" id="scales" name="scales"
+                 checked>
+          <label for="scales">Scales</label>
+        </div>
+    
+        <div>
+          <input type="checkbox" id="horns" name="horns">
+          <label for="horns">Horns</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="fangs" name="fangs">
+            <label for="fangs">Fangs</label>
+          </div>
+    </fieldset>
+
+</main>
+
+<footer>
+    <nav><ul>
+        <li><a href="https://twitter.com">Twitter</a></li>
+        <li><a href="https://www.youtube.com">YouTube</a></li>
+        <li><a href="http://facebook.com/">Facebook</a></li>
+    </ul></nav>
+</footer>
+</body>
+</html>
